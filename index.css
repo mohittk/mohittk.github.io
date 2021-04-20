@@ -12,7 +12,7 @@ section{
 .Mohit {
     position: relative;
     min-height: 100vh;
-    background: url(m.jpg);
+    background: url(mo.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -21,37 +21,56 @@ section{
 
 
 }
+.Mohit img{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    
+  
+   
+
+    
+    
+} 
+
+
+ 
+
 .Mohit h2
 {
     font: size 3em;
-    color: #fff;
+    color: orange;
     font-weight: 500;
-    line: height 1.5em;
+    
 }
 .Mohit h2 span
 {
     font-size:3em;
-    font-weight: 700;   
+    font-weight: 700;
+    color: white;   
 }
 .Mohit h3
 {
     font-size:1.5em;
-    color: #fff;
+    color:lightgreen;
     font-weight:500;
 }
 .btn
 {
     position: relative;
-    background: #2196f3;
+    background: red;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
     padding:10px 30px;
-    font-style: 18px arial;
+    font-style: 100px arial;
     text-transform: uppercase;
     text-decoration: coral;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 800;
+    border-radius: 25px;
 }
 header
 {
@@ -64,31 +83,42 @@ header
     display: flex;
     justify-content:space-around;
     align-items:center;
-    transition:0.5s;
+    transition: 0.5s;
 }
 header.sticky
 {
-    background-attachment: #fff;
+    background-attachment: white;
     padding:20px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 
 }
 header .logo
 {
-    color: #fff;
+    color:yellow;
     font-size: 24px;
+    display: flex;
+    list-style: none;
+    background-color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-weight:700;
+    margin: 0;
+    padding: 0;
+    padding: 14px 16px;
 }
 header .sticky .logo
 {
-    color: #111;
+    color: black;
 }
 header ul
 {
     position: relative;
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
 }
 header ul li
 {
@@ -98,16 +128,25 @@ header ul li
 header ul li a
 {
     position: relative;
-    display: inline-block;
+    display: block;
     margin: 0 15px;
-    color: #fff;
+    color:yellow;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size:20px;
+    padding: 14px 16px;
+
+}
+header ul li a:hover{
+    background-color: yellow;
 
 }
 header .sticky ul li a{
-    color:#111;
+    color:white;
 
 }
+
 .heading
 {
     width: 100%;
@@ -117,35 +156,100 @@ header .sticky ul li a{
 }
 .heading h2
 {
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+
 
 }
 .content
 {
     display: flex;
     justify-content: space-between;
+    
+}
+.contentBx p{
+    font-size:30px;
+}
+.about{
+    background-image: linear-gradient(to left,skyblue, pink);
+}
+.aboutBx img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 17%;
+    padding: 1em;
+    
+    
+   
+}
+
+ .conabout h2{
+     position: absolute;
+     margin: 5px;
+     
+ 
+
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    
+
+
+    
+    
 }
 .contentBx h3
 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
+
 .w50
 {
     min-width: 50%;
 
 
 }
-.interests
-{
-    background-color: #111;
+
+.content .conabout{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+
 
 
 }
+
+.content .conabout .aboutBx{
+    padding: 40px 20px;
+    background: linear-gradient(
+        #009fff,
+        #ec2f4b);
+
+    color: #fff;
+    max-width: 340px;
+    margin: 70px;
+    
+    text-align: center;
+   
+}
+
+
+.interests
+{
+    background-image: linear-gradient(to right,skyblue, pink);
+
+
+}
+
+
 .heading.white
 {
-    color: #fff;
+    color:black;
 }
 .interests .content
 {
@@ -158,24 +262,32 @@ header .sticky ul li a{
 .interests .content .interestsBx
 {
     padding: 40px 20px;
-    background: #222;
-    color: #fff;
+    background-image: linear-gradient(#4776e6
+    ,
+    #8e54e9);
+    color: black;
     max-width: 340px;
-    margin: 20px;
+    margin: 30px;
     text-align: center;
-    transition: 0.5s;
+    
 
 }
+
 .interests .content .interestsBx:hover{
-    background: #2196f3;
+    background-image: linear-gradient(
+        #24c6dc,
+        #514a9d
+        );
+    transition: 0.5s;
 }
 .interests .content .interestsBx h2
 {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: 'Russo One', serif;
     font-weight: 600;
 }
 .achievements{
-    background:orange;
+    background-image: linear-gradient(to left,skyblue, pink);
 
 }
 .achievements .content .achievementsBx{
@@ -200,10 +312,13 @@ header .sticky ul li a{
     margin: 20px;
     text-align: left;
     transition: 0.5s;
+    background-image: linear-gradient(
+        #c04848,
+        #480048);
 }
 .contact
 {
-    background: purple;
+    background-image: linear-gradient(to right,skyblue, pink);
 }
 .contact .content .contactBx{
     min-width: calc(50%-40px);
