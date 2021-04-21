@@ -27,9 +27,6 @@ section{
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    
-  
-   
 
     
     
@@ -72,18 +69,20 @@ section{
     font-weight: 800;
     border-radius: 25px;
 }
+
 header
 {
     position: fixed;
     top: 0;;
     left: 0;
     width: 100%;
-    padding:40px 100px;
+    padding:40px 90px;
     z-index: 1000;
     display: flex;
     justify-content:space-around;
     align-items:center;
     transition: 0.5s;
+    background-color:black;
 }
 header.sticky
 {
@@ -139,11 +138,23 @@ header ul li a
 
 }
 header ul li a:hover{
-    background-color: yellow;
+    background-color: purple;
 
 }
 header .sticky ul li a{
     color:white;
+
+}
+.btn:hover{
+    background-color:rgb(247, 95, 95);
+}
+.connectBx a{
+    position: relative;
+    display: block;
+    color:yellow;
+    font-weight:800;
+    text-transform: capitalize;
+    padding:14px 16px;
 
 }
 
@@ -159,6 +170,10 @@ header .sticky ul li a{
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
+
+    
+
+    
 
 
 }
@@ -186,7 +201,7 @@ header .sticky ul li a{
    
 }
 
- .conabout h2{
+.conabout h2{
      position: absolute;
      margin: 5px;
      
@@ -201,6 +216,22 @@ header .sticky ul li a{
     
     
 }
+.connectBx p{
+    text-align: center;
+    margin: 50px;
+    
+}
+.connect h2{
+    position: absolute;
+     margin: 20px;
+
+    font-size: 40px;
+    text-align: center;
+
+    left: 38%;
+  
+
+}
 .contentBx h3
 {
     font-size: 30px;
@@ -211,6 +242,87 @@ header .sticky ul li a{
 {
     min-width: 50%;
 
+
+}
+.conabout .aboutBx a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 30px;
+    color: white;
+
+
+}
+.content .connect .linkedinBx a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 25px;
+    color: #FFCC33;
+}
+.content .connect .instaBx a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 25px;
+    color: #FFCC33;
+}
+.content .connect .linkedinBx{
+    padding: 30px 30px;
+    background: #2867B2;
+    color: #fff;
+    max-width: 200px;
+    margin: 105px;
+    
+    
+    text-align: center;
+}
+.content .connect .twitterBx{
+    padding: 30px 30px;
+    background: #1DA1F2;
+    color: #fff;
+    max-width: 200px;
+    margin: 105px;
+    
+    
+    text-align: center;
+}
+.content .connect .instaBx{
+    padding: 30px 30px;
+    background-image: linear-gradient(#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    color: #fff;
+    max-width: 200px;
+    margin: 105px;
+    
+    text-align: center;
+}
+.content .connect .githubBx{
+    padding: 30px 30px;
+    background: #211F1F;
+    color: #fff;
+    max-width: 200px;
+    margin: 100px;
+    
+    text-align: center;
+}
+.content .connect .githubBx a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 25px;
+    color: #FFCC33;
+
+}
+.content .connect .twitterBx a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 25px;
+    color: #FFCC33;
+
+}
+
+
+.content .connect{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
@@ -232,7 +344,8 @@ header .sticky ul li a{
 
     color: #fff;
     max-width: 340px;
-    margin: 70px;
+    margin: 100px;
+    
     
     text-align: center;
    
@@ -262,8 +375,8 @@ header .sticky ul li a{
 .interests .content .interestsBx
 {
     padding: 40px 20px;
-    background-image: linear-gradient(#4776e6
-    ,
+    background-image: linear-gradient(#4776e6,
+    
     #8e54e9);
     color: black;
     max-width: 340px;
