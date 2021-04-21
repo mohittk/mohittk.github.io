@@ -24,9 +24,9 @@ section{
 .Mohit img{
     position: absolute;
     left: 80%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 60%;
 
     
     
@@ -170,10 +170,11 @@ header .sticky ul li a{
     font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
-
     
 
     
+
+
 
 
 }
@@ -358,7 +359,9 @@ header .sticky ul li a{
 
 
 }
-
+.heading h2{
+    text-decoration: overline;
+}
 
 .heading.white
 {
@@ -399,48 +402,45 @@ header .sticky ul li a{
     font-family: 'Russo One', serif;
     font-weight: 600;
 }
-.achievements{
+.skills{
     background-image: linear-gradient(to left,skyblue, pink);
 
 }
-.achievements .content .achievementsBx{
-    min-width: calc(50%-40px);
-    padding: 60px 40px;
+.container{
+    width: 100%;
+    background-image: linear-gradient(to left,skyblue, pink);
     margin: 20px;
-    background: navy;
-    
-}
-.achievements .content .achievementsBx h2
-{
-    font-size: 20px;
-    font-weight: 600;
 
 }
-.achievements .content .achievementsBx
-{
-    padding: 40px 20px;
-    background: #222;
-    color: #fff;
-    max-width: 340px;
-    margin: 20px;
+.skills h1{
     text-align: left;
-    transition: 0.5s;
-    background-image: linear-gradient(
-        #c04848,
-        #480048);
+   
 }
+.container .skilles{
+   
+        text-align: right; 
+        padding-top: 30px; 
+        padding-bottom: 15px; 
+        color: black; 
+        
+      
+}
+.html {width: 60%; background-color: #4CAF50;} 
+.css {width: 50%; background-color: #2196F3;}
+.js {width: 30%; background-color: #f44336;} 
+.cpp{width:60%; background-color: purple;} 
 .contact
 {
     background-image: linear-gradient(to right,skyblue, pink);
 }
 .contact .content .contactBx{
-    min-width: calc(50%-40px);
-    padding: 60px 40px;
+   
+    padding: 70px 40px;
     margin: 20px;
-    background: lightgoldenrodyellow;
+    background-image: linear-gradient(to bottom,skyblue,orange,blue);
 }
 .contact .content .contactBx h2
 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600; 
 }
