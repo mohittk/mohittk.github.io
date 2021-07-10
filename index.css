@@ -27,6 +27,8 @@ section{
     top: 60%;
     transform: translate(-50%, -50%);
     border-radius: 60%;
+    
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     
     
@@ -199,6 +201,7 @@ header .sticky ul li a{
     padding: 1em;
     
     
+    
    
 }
 
@@ -275,6 +278,22 @@ header .sticky ul li a{
     
     text-align: center;
 }
+.content .connect .linkedinBx:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.content .connect .instaBx:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.content .connect .githubBx:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.content .connect .twitterBx:hover{
+    background-color: red;
+    transition: 0.5s;
+}
 .content .connect .twitterBx{
     padding: 30px 30px;
     background: #1DA1F2;
@@ -322,7 +341,7 @@ header .sticky ul li a{
 .content .connect{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    
     flex-direction: row;
 
 }
@@ -419,28 +438,20 @@ header .sticky ul li a{
 .container .skilles{
    
         text-align: right; 
-        padding-top: 30px; 
+        padding-top: 28px; 
         padding-bottom: 15px; 
         color: black; 
         
       
 }
+span{
+    color: rgb(0, 26, 255);
+}
 .html {width: 70%; background-color: #4CAF50;} 
 .css {width: 50%; background-color: #2196F3;}
 .js {width: 30%; background-color: #f44336;} 
 .cpp{width:60%; background-color: purple;} 
-.contact
-{
-    background-image: linear-gradient(to right,skyblue, pink);
-}
-.contact .content .contactBx{
-   
-    padding: 70px 40px;
-    margin: 20px;
-    background-image: linear-gradient(to bottom,skyblue,orange,blue);
-}
-.contact .content .contactBx h2
-{
-    font-size: 30px;
-    font-weight: 600; 
-}
+
+footer h3{
+    position: absolute;
+    margin: 10em;
