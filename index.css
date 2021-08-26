@@ -5,11 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 body{
     background-color: rgb(27, 26, 26);
     margin: 0;
     padding: 0;
-  overflow-y:scroll;
+    overflow-y:scroll;
     box-sizing: border-box;
 }
 
@@ -24,7 +25,7 @@ ul {
     overflow: hidden;
   }
   .logo {
-      font-size: 2.5rem;
+      font-size:1rem;
       margin-left: 4rem;
       font-family: 'Lobster', cursive;
   }
@@ -36,7 +37,7 @@ ul {
       
   }
   .logo a{
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     text-align: center;
     display: block;
     text-decoration: none;
@@ -46,33 +47,29 @@ ul {
 
   }
   .main-nav a {
-      padding: 10px 15px;
+      padding: 16px;
       text-transform: uppercase;
       text-align: center;
       display: block;
+      font-size: 1.5rem;
       text-decoration: none;
       color: white;
   }
   
-  .main-nav a {
-      color: white;
-      font-size: 1.5rem;
-  }
+  
   
   .main-nav a:hover {
     border-bottom: 3px solid white;
 
   }
-  .header {
-      
-      background-color: #7700ff;
-      -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-  }
+ .header{
+     background-color:#7700ff;
+     transition: 0.4s;
+     border-bottom-right-radius: 30px;
+     border-bottom-left-radius: 30px;
+     
+
+ }
   
   .home .content h1{
       margin-left: 8rem;
@@ -83,19 +80,37 @@ ul {
      
 
   }
-  .content{
-      display: inline-block;
-      
-    
+ 
+  .main-nav {
+    justify-content: space-around;
+    display: flex;
+    background-color: #7700ff;
+    transition: 0.4s;
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .stickycolor{
+      background-color: red;
+  }
+  
   .home .content h1 span{
       color: #7700ff;
       font-size: 5rem;
       
   }
   
+  .container{
+     margin-top: 8rem;
+
+  }
+  
   .home .content h2{
       margin-left: 8rem;
+      z-index: 1;
       font-size: 3rem;
       color: white;
       margin-top: 5rem;
@@ -113,13 +128,13 @@ ul {
         width: 20%;
         position: absolute;
         right: 10%;
-        top: 30%;
+        top: 20%;
         border-radius: 30px;
         box-shadow: 10px 10px #7700ff;
       }
       .home .content .img1 img:hover{
 
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: 1s;
       }
 
@@ -128,6 +143,7 @@ ul {
         margin-top:4rem;
         border-top: 1.5px solid #7700ff;
         background-color: #7700ff;
+        border-radius: 20px;
     }
     
     .footer-title {
@@ -150,9 +166,11 @@ ul {
     .footer .col:first-child .text {
         width: 80%;
         margin: 0 auto;
-        font-family: open sans-serif;
-        font-size: 1.5rem;
+        font-family: 'Oleo Script', cursive;
+    
+        font-size: 2rem;
         color: white;
+        
        
         
     }
@@ -186,9 +204,10 @@ ul {
     
     /* About me page ka css---------------------------- */
     .about .content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: right;
+        display: grid;
+        margin:0;
+        padding: 0;
+        
     }
     
   .about .content .img1 img{
@@ -196,16 +215,30 @@ ul {
           width: 20%;
           position: absolute;
           left: 10%;
-          top: 30%;
-          box-shadow: 0 4px 8px 0 #7700ff, 0 6px 20px 0 #7700ff;
+          top: 25%;
+          border-radius: 20px;
+          
          
         }
         
         .about .content .aboutinfo p{
             color: white;
             font-family: Poppins;
-            font-size: 1rem;
+            font-size: 1.5rem;
+            text-align: justify;
+            word-wrap: break-word;
+            width: 40%;
+            float: right;
+            margin-right: 10rem;
+            margin-top: 5rem;
+            
         }
+        .aboutdata{
+            
+        }
+
+       
+
  
 
       
