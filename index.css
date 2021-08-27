@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 body{
     background-color: rgb(27, 26, 26);
     margin: 0;
@@ -93,27 +95,37 @@ ul {
     width: 100%;
     z-index: 1;
   }
-  .stickycolor{
-      background-color: red;
+  .sticky + .container1 {
+    padding-top: 102px;
   }
+  
   
   .home .content h1 span{
       color: #7700ff;
       font-size: 5rem;
       
   }
+  .home h4{
+      font-size:1.5rem;
+      color: #7700ff;
+      margin-left: 8rem;
+      font-family: Poppins;
+      text-transform: uppercase;
+      font-style: italic;
+
+  }
   
-  .container{
+  .container1{
      margin-top: 8rem;
 
   }
   
   .home .content h2{
+      margin-top: 1rem;
       margin-left: 8rem;
-      z-index: 1;
       font-size: 3rem;
       color: white;
-      margin-top: 5rem;
+    
       font-family: 'Poppins', sans-serif;
   }
   .home .content h3{
@@ -144,6 +156,7 @@ ul {
         border-top: 1.5px solid #7700ff;
         background-color: #7700ff;
         border-radius: 20px;
+        
     }
     
     .footer-title {
@@ -196,54 +209,145 @@ ul {
 
         
     }
-    .copyright{
+    .copyright h4{
         background-color:black;
         color: white;
         text-align: center;
+        margin-bottom: 0;
+    
     }
     
     /* About me page ka css---------------------------- */
-    .about .content {
-        display: grid;
-        margin:0;
-        padding: 0;
+
+    .container {
+        align-items: start;
+        display: flex;
+    }
+    
+    .container__media img{
+        margin-right: 16px;
+        width: 90%;
+        border-radius: 5px;
+        margin-left:10rem;
+        margin-right: 5rem;
+        margin-top: 8rem;
+        filter: brightness(1.2);
+    }
+    
+    .container__content p{
+        /* Take the remaining width */
+        flex: 1;
+        font-size: 1.6rem;
+        font-family: Poppins;
+        margin-left: 20rem;
+        color: white;
+        width: 60%;
+        text-align: justify;
+        margin-top: 10rem;
+       text-shadow: 2px 2px 5px #7700ff;
+
+
+
+    }
+    .sticky + .container {
+        padding-top: 102px;
+      }
+
+      /* PROJECT KA CSS DATA  */
+      /* .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+        border-radius: 5px;
         
     }
     
-  .about .content .img1 img{
-  
-          width: 20%;
-          position: absolute;
-          left: 10%;
-          top: 25%;
-          border-radius: 20px;
-          
-         
-        }
+    .card__cover img {
         
-        .about .content .aboutinfo p{
-            color: white;
-            font-family: Poppins;
-            font-size: 1.5rem;
-            text-align: justify;
-            word-wrap: break-word;
-            width: 40%;
-            float: right;
-            margin-right: 10rem;
-            margin-top: 5rem;
-            
-        }
-        .aboutdata{
-            
-        }
+        width: 50%;
+        border-radius: 5px;
+    }
+    
+    .card__content h2{
+        flex: 1;
+        color: white;
+        padding: 2px 16px;
+    }
+    
+    */
+    .card {
+        margin: 3rem;
 
-       
-
- 
 
       
-  
-   
+        transition: 0.3s;
+        width: 25%;
+       
+        border-radius: 5px;
+        background-color:#7700ff;
+        display: inline-block;
+      }
+      
+      .card:hover {
+        box-shadow: 20px 20px 0 white;
+        
+      }
+      
+      img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        
+      }
+      .contentp h4{
+          color: white;
+          font-size: 1.2rem;
+          font-family: 'Patua One', cursive;
+          letter-spacing:1px;
+          font-weight: 600;
+
+          
+
+      }
+      .contentp p{
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-family: 'Patua One', cursive;
+        letter-spacing:1px;
+
+        
+
+    }
+    .contentp h5{
+        color: rgb(0, 0, 0);
+        font-size: 1.2em;
+        font-family: 'Roboto Slab', serif;
+        
+
+    }
+      
+      .contentp {
+        padding: 2px 16px;
+
+      }
+      
+
+      .contentp a{
+          font-family: Poppins;
+          color: white;
+          text-decoration: none;
+          font-size: 0.9em;
+          word-wrap: break-word;
+          
+      }
+      .contentp a:hover{
+       
+        text-decoration: underline;
+        
+    }
+    .sticky + .container2 {
+        padding-top: 120px;
+      }
+
 
       
   
