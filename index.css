@@ -24,14 +24,7 @@ body{
 }
  
 
-button{
-  position: relative;
-  background-color:white;
-  
-  outline: none;
-  border-radius: 5px;
-  width: 100%;
-}
+
 
 
 
@@ -57,6 +50,7 @@ ul {
       margin-top: 5px;
       margin-right: 7rem;
       font-family: 'Raleway', sans-serif;
+    
       
   }
   .logo a{
@@ -71,19 +65,36 @@ ul {
   }
 
   .main-nav a {
-      padding: 16px;
+      
       text-transform: uppercase;
       text-align: center;
       display: block;
       font-size: 1.2rem;
       text-decoration: none;
       color: white;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      margin: 1rem;
   }
+
+button{
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+
+}
+button:hover{
+  background-color: rgb(202, 202, 202);
+  
+}
+  
   
   
   
   .main-nav a:hover {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #e7d2ff;
 
   }
  .header{
@@ -289,9 +300,40 @@ font-family: 'Poppins', sans-serif;
         margin-top: 8rem;
         filter: brightness(1.2);
     }
+    .resume a{
+      padding: 10px;
+      background-color: #a46ae6;
+      float: right;
+      margin-right: 44%;
+      font-weight: bold;
+      font-family: poppins;
+      border-radius: 5px;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      
+    }
+    .dark-mode .resume a{
+      padding: 10px;
+      background-color:rgb(87, 87, 87);
+      float: right;
+      margin-right: 44%;
+      font-weight: bold;
+      font-family: poppins;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      
+    }
+    .resume a:hover{
+      background-color: #c7abe7;
+      
+      
+    }
     
     .container__content p{
-        /* Take the remaining width */
+     
         flex: 1;
         padding: 2rem;
         font-size: 1.6rem;
@@ -305,8 +347,9 @@ font-family: 'Poppins', sans-serif;
         border-radius: 20px;
        font-weight: 700;
     }
+
     .dark-mode .container__content p{
-      /* Take the remaining width */
+
       flex: 1;
       padding: 2rem;
       font-size: 1.6rem;
@@ -475,6 +518,7 @@ font-family: 'Poppins', sans-serif;
   }
   
   .bar{
+    
     background-color: #7700ff;
     padding: 2px;
     border-radius: 15px;
@@ -536,7 +580,7 @@ font-family: 'Poppins', sans-serif;
   }
 
   .techski {
-     
+    display: grid;
       padding: 10px;
       margin: 10px;
       border-radius: 3px;
