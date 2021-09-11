@@ -147,6 +147,23 @@ button:hover{
   
       
   }
+  .name-anime1{
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  .name-anime1 .name-anime2{
+    position: relative;
+  display: inline-block;
+  overflow: hidden;
+  }
+.name-anime1 .letters{
+
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+ 
   .home h4{
       font-size:1.5rem;
       color: #7700ff;
@@ -508,6 +525,15 @@ font-family: 'Poppins', sans-serif;
         border-radius: 5px;
         background-color:#a46ae6;
         display: inline-block;
+      }
+      .dark-mode .card{
+        margin: 3rem;
+        transition: 0.3s;
+        width: 25%;
+        border-radius: 5px;
+        background-color:rgb(87, 87, 87);
+        display: inline-block;
+
       }
 /*       
       .card:hover {
