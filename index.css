@@ -369,6 +369,116 @@ font-family: 'Poppins', sans-serif;
         padding-top: 102px;
       }
 
+
+
+      .timeline {
+        /* Used to position the left vertical line */
+        position: relative;
+        margin: 8rem;
+      
+    }
+
+    
+    .timeline__line {
+        /* Border */
+        border-right: 3px solid #7700ff;
+    
+        /* Positioned at the left */
+        left: 16px;
+        position: absolute;
+        top: 0px;
+    
+        /* Take full height */
+        height: 100%;
+    }
+    .dark-mode .timeline__line {
+      /* Border */
+      border-right: 3px solid rgb(87, 87, 87);
+  
+      /* Positioned at the left */
+      left: 16px;
+      position: absolute;
+      top: 0px;
+  
+      /* Take full height */
+      height: 100%;
+  }
+    
+    .timeline__items {
+        /* Reset styles */
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+  
+    
+    .timeline__item {
+        margin-bottom: 8px;
+    }
+    
+    .timeline__top {
+        /* Center the content horizontally */
+        align-items: center;
+        display: flex;
+    }
+    
+    .timeline__circle {
+        /* Rounded border */
+        background-color: #7700ff;
+        border-radius: 9999rem;
+        /* Size */
+        height: 40px;
+        width: 40px;
+    }
+    .dark-mode .timeline__circle {
+      /* Rounded border */
+      background-color: rgb(87, 87, 87);
+      border-radius: 9999rem;
+      /* Size */
+      height: 40px;
+      width: 40px;
+  }
+    
+    .timeline__title {
+        /* Take available width */
+        flex: 1;
+        font-size: 1rem;
+        margin-left: 1rem;
+        font-family:'Roboto Slab', serif;
+    }
+    .timeline_main__title{
+      flex: 1;
+      font-size: 1.4rem;
+      margin-left: 3.5rem;
+      font-family: 'Fredoka One', cursive;
+      border-bottom: 3px solid #7700ff;
+
+    }
+    
+    .timeline__desc {
+        /* Make it align with the title */
+        margin-left: 3.5rem;
+        font-size: 1.2rem;
+        font-family: Poppins;
+    }
+    .dark-mode .timeline__title {
+      /* Take available width */
+      flex: 1;
+      font-size: 1rem;
+      margin-left: 1rem;
+      color: white;
+      font-family:'Roboto Slab', serif;
+  }
+  
+  .dark-mode .timeline__desc {
+      /* Make it align with the title */
+      margin-left: 3.5rem;
+      font-size: 1.2rem;
+      font-family: Poppins;
+      color: white;
+  }
+
       /* PROJECT KA CSS DATA ---------------------- */
       /* .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
